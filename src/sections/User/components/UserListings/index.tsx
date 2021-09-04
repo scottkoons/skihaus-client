@@ -35,7 +35,7 @@ export const UserListings = ({
         current: listingsPage,
         total,
         defaultPageSize: limit,
-        hideOnSinglePage: true,
+        hideOnSinglePage: false,
         showLessItems: true,
         onChange: (page: number) => setListingsPage(page),
       }}
