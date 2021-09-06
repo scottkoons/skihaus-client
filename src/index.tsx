@@ -3,7 +3,16 @@ import { ApolloClient, ApolloProvider, InMemoryCache, useMutation, createHttpLin
 import { setContext } from "@apollo/client/link/context";
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { AppHeader, Home, Host, Listing, Listings, Login, NotFound, User } from "./sections";
+import {
+  AppHeader,
+  Home,
+  Host,
+  Listing,
+  Listings,
+  Login,
+  NotFound,
+  User
+} from "./sections";
 import { AppHeaderSkeleton, ErrorBanner } from "./lib/components";
 import { LOG_IN } from "./lib/graphql/mutations";
 import { LogIn as LogInData, LogInVariables } from "./lib/graphql/mutations/LogIn/__generated__/LogIn";
